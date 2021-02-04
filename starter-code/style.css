@@ -6,3 +6,48 @@
     font-family: 'chivo-bold';
     src: url(assets/Chivo/Chivo-Bold.ttf);
 }
+h1, h2, p {
+    font-family: 'chivo-light';
+}
+h1 {
+    color: #54E6Af;
+}
+h2 {
+    color: white;
+}
+p {
+    color: #C2CBE5;
+}
+body{
+    background-color: #121725;
+}
+.form-element {
+    font-family: 'chivo-bold';
+    font-size: 14px;
+    line-height: 28px;
+    height: 46px;
+    border-radius: 28px;
+    border: none;
+}
+input{
+    width: 297px;
+    padding-left: 30px;
+    color: #9599A5;
+    background-color: #2C344B;
+    margin-top: 50px;
+}
+button{
+    width: 327px;
+    background-color: #54E6Af;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.app-container{
+    text-align: center;
+}
+.form-contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
