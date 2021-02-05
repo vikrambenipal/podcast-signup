@@ -33,6 +33,10 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
 }
+.bg{
+    max-height: 0px;
+    overflow: hidden;
+}
 .overlay {
     color:rgba(18,23,37, 0.9);
     z-index: -1000;
@@ -83,21 +87,73 @@ button{
     justify-content: center;
 }
 
-@media all and (min-width: 750px){
-
+@media all and (min-width: 780px){
+    h1, h2{
+        font-size: 48px;
+        padding-left: 15px;
+    }
+    h2{
+        margin-top: -25px;
+    }
     body {
-        background:rgba(18,23,37, 1);
+        /* background: rgba(18,23,37, 1) url(assets/tablet/image-host.jpg) ; */
+        background: rgba(18,23,37, 1);
+        /* background-image: url(assets/tablet/image-host.jpg); */
+        background-repeat: no-repeat;
+        background-blend-mode: none;
+    }
+    .bg{
+        max-height: 100%;
+        position: absolute;
+        z-index: -1;
+        top: 0px;
+        right: 0px;
+    }
+    .logo{
+        position: absolute;
+        margin-top: -250px;
+        margin-left: 15px;
+        width: 134.85px;
+        height: 56px;
     }
     .app-container{
-        border: 2px solid white;
+        padding-top: 30px;
+        margin-top: 300px;
+        background-color:rgba(18,23,37, 1);
         text-align: left;
         width: 80%;
+        padding-bottom: 200px;
+    }
+    .comp{
+        width: auto;
+        height: auto;
     }
     p {
+        width: 88%;
         margin: 0;
+        margin-bottom: 30px;
+        padding-left: 15px;
     }
     .column{
         display: flex;
         flex-direction: column-reverse;
+    }
+    .form-contents{
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        padding-left: 15px;
+    }
+    button, input{
+        margin: 0;
+    }
+    button{
+        width: 162px;
+        height: 1px;
+        position: absolute;
+        margin-left: 300px;
+    }
+    input{
+        width: 427px;
     }
 }
