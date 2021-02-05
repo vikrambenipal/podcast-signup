@@ -6,20 +6,53 @@
     font-family: 'chivo-bold';
     src: url(assets/Chivo/Chivo-Bold.ttf);
 }
+html{
+    height: 100%;
+}
 h1, h2, p {
     font-family: 'chivo-light';
 }
 h1 {
     color: #54E6Af;
+    font-size: 26px;
 }
 h2 {
     color: white;
+    font-size: 26px;
 }
 p {
     color: #C2CBE5;
+    font-size: 15px;
+    line-height: 25px;
+    width: 75%;
+    margin: 0 auto;
 }
 body{
-    background-color: #121725;
+    background: url(assets/mobile/image-host.jpg) rgba(18,23,37, 0.85);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-color: rgba(18,23,37, 0.9); */
+}
+#bg {
+    color:rgba(18,23,37, 0.9); 
+}
+.overlay {
+    color:rgba(18,23,37, 0.9);
+    z-index: -1000;
+}
+.logo {
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+.companies {
+    margin-top: 35px;
+}
+.comp {
+    width: 15%;
+    height: 15%;
+    padding-left: 12.5px;
+    padding-right: 12.5px;
 }
 .form-element {
     font-family: 'chivo-bold';
@@ -30,19 +63,22 @@ body{
     border: none;
 }
 input{
-    width: 297px;
-    padding-left: 30px;
+    /* width: 297px; */
+    width: 80%;
+    padding-left: 5%;
     color: #9599A5;
     background-color: #2C344B;
     margin-top: 50px;
 }
 button{
-    width: 327px;
+    /* width: 327px; */
+    width: 85%;
     background-color: #54E6Af;
     margin-top: 15px;
     cursor: pointer;
 }
 .app-container{
+    
     text-align: center;
 }
 .form-contents {
